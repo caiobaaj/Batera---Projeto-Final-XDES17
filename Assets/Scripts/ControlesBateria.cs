@@ -70,7 +70,7 @@ public class ControlesBateria : MonoBehaviour
 
     private IEnumerator CorPiscar()
     {
-        _spriteSnare.color = Color.crimson;
+        _spriteSnare.color = corPiscada;
         yield return new WaitForSeconds(tempoPiscada);
         _spriteSnare.color = _corOriginal;
     }
