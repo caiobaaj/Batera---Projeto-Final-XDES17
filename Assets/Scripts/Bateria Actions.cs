@@ -104,59 +104,59 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Kick"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""47d4b2d7-78f5-414f-8181-78ea950a351f"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false,
                     ""priority"": 0
                 },
                 {
-                    ""name"": ""High Tom"",
-                    ""type"": ""Button"",
+                    ""name"": ""HighTom"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""ecfd7f98-52eb-4c61-a18f-30cc9e3e2f74"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false,
                     ""priority"": 0
                 },
                 {
-                    ""name"": ""Low Tom"",
-                    ""type"": ""Button"",
+                    ""name"": ""LowTom"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""8e2c9a88-3fb4-4406-8d1d-82dd768a6643"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false,
                     ""priority"": 0
                 },
                 {
-                    ""name"": ""Floor Tom"",
-                    ""type"": ""Button"",
+                    ""name"": ""FloorTom"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""d09cebdb-847f-4e10-9cba-d3959a2b21fe"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false,
                     ""priority"": 0
                 },
                 {
-                    ""name"": ""Hi-Hat"",
-                    ""type"": ""Button"",
+                    ""name"": ""HiHat"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""9abc18d1-e557-48b9-8260-d4ccb3039dd0"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false,
                     ""priority"": 0
                 },
                 {
-                    ""name"": ""Hi-Hat Pedal"",
-                    ""type"": ""Button"",
+                    ""name"": ""HiHatPedal"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""f623f911-d467-471f-b0f3-3f602d1d486f"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false,
@@ -164,9 +164,9 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Crash"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""0ffccee3-ee46-441f-885c-2fd00567b9ff"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false,
@@ -174,9 +174,9 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Ride"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""76e2a596-3b9c-4b89-90bf-a6a027f5821d"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false,
@@ -213,7 +213,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""High Tom"",
+                    ""action"": ""HighTom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -224,7 +224,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""High Tom"",
+                    ""action"": ""HighTom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -235,7 +235,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Low Tom"",
+                    ""action"": ""LowTom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -246,7 +246,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Low Tom"",
+                    ""action"": ""LowTom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -257,7 +257,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Floor Tom"",
+                    ""action"": ""FloorTom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -268,7 +268,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Floor Tom"",
+                    ""action"": ""FloorTom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -279,7 +279,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Hi-Hat"",
+                    ""action"": ""HiHat"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -290,7 +290,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Hi-Hat"",
+                    ""action"": ""HiHat"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -301,7 +301,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Hi-Hat Pedal"",
+                    ""action"": ""HiHatPedal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -380,11 +380,11 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
         m_Bateria = asset.FindActionMap("Bateria", throwIfNotFound: true);
         m_Bateria_Snare = m_Bateria.FindAction("Snare", throwIfNotFound: true);
         m_Bateria_Kick = m_Bateria.FindAction("Kick", throwIfNotFound: true);
-        m_Bateria_HighTom = m_Bateria.FindAction("High Tom", throwIfNotFound: true);
-        m_Bateria_LowTom = m_Bateria.FindAction("Low Tom", throwIfNotFound: true);
-        m_Bateria_FloorTom = m_Bateria.FindAction("Floor Tom", throwIfNotFound: true);
-        m_Bateria_HiHat = m_Bateria.FindAction("Hi-Hat", throwIfNotFound: true);
-        m_Bateria_HiHatPedal = m_Bateria.FindAction("Hi-Hat Pedal", throwIfNotFound: true);
+        m_Bateria_HighTom = m_Bateria.FindAction("HighTom", throwIfNotFound: true);
+        m_Bateria_LowTom = m_Bateria.FindAction("LowTom", throwIfNotFound: true);
+        m_Bateria_FloorTom = m_Bateria.FindAction("FloorTom", throwIfNotFound: true);
+        m_Bateria_HiHat = m_Bateria.FindAction("HiHat", throwIfNotFound: true);
+        m_Bateria_HiHatPedal = m_Bateria.FindAction("HiHatPedal", throwIfNotFound: true);
         m_Bateria_Crash = m_Bateria.FindAction("Crash", throwIfNotFound: true);
         m_Bateria_Ride = m_Bateria.FindAction("Ride", throwIfNotFound: true);
     }
@@ -669,35 +669,35 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnKick(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "High Tom" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "HighTom" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnHighTom(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Low Tom" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "LowTom" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnLowTom(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Floor Tom" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "FloorTom" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnFloorTom(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Hi-Hat" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "HiHat" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnHiHat(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Hi-Hat Pedal" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "HiHatPedal" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
