@@ -3564,7 +3564,7 @@ MonoBehaviour:
   somLowTom: {fileID: 8300000, guid: 7513d491dabcf6147bf4435a5b16f2df, type: 3}
   somFloorTom: {fileID: 8300000, guid: 803c2d007e025854397e8ad764931390, type: 3}
   somHiHat: {fileID: 8300000, guid: d418374fa50a4e348af55389ebbe3062, type: 3}
-  somHiHatComPedal: {fileID: 8300000, guid: 72542ec7f5dec9c4b8ae385d4e7e3626, type: 3}
+  somHiHatComPedal: {fileID: 0}
   somPedalHiHat: {fileID: 8300000, guid: 6e8af0760a0908a42a98aec7669e5d41, type: 3}
   somCrash: {fileID: 8300000, guid: f2b1d615efe47b24a8ae30b6cbf84f86, type: 3}
   somRide: {fileID: 8300000, guid: a01e54380037d6b409c2f723e1bcec04, type: 3}
