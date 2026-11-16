@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37c1a82ba2f2424c871a5911c13093d, type: 3}
+  m_Name: Teste1
+  m_EditorClassIdentifier: Assembly-CSharp::MapaMusica
+  nomeMusica: "Nova M\xFAsica"
+  arquivoAudio: {fileID: 0}
+  bpm: 30
+  offsetPrimeiroBeatSegundos: 2.5
+  tempoAntecedenciaAureola: 1.5
+  partituraEmTexto: "# Compasso 1 (Groove b\xE1sico com Hi-Hat Fechado e abertura
+    no 4.5)\r\n1.0|Kick, 1.0|HHC\r\n1.5|HHC\r\n2.0|Snare, 2.0|HHC\r\n2.5|HHC\r\n3.0|Kick,
+    3.0|HHC\r\n3.5|Kick, 3.5|HHC\r\n4.0|Snare, 4.0|HHC\r\n4.5|HHO\r\n\r\n# Compasso
+    2 (Ataque no Crash + fechamento do pedal no 1.0)\r\n5.0|Kick, 5.0|Crash, 5.0|HHP\r\n5.5|HHC\r\n6.0|Snare,
+    6.0|HHC\r\n6.5|HHC\r\n7.0|Kick, 7.0|HHC\r\n7.5|HHO\r\n8.0|Snare, 8.0|HHP"
+  notas:
+  - batida: 1
+    tipoNota: 0
+  - batida: 1
+    tipoNota: 5
+  - batida: 1.5
+    tipoNota: 5
+  - batida: 2
+    tipoNota: 1
+  - batida: 2
+    tipoNota: 5
+  - batida: 2.5
+    tipoNota: 5
+  - batida: 3
+    tipoNota: 0
+  - batida: 3
+    tipoNota: 5
+  - batida: 3.5
+    tipoNota: 0
+  - batida: 3.5
+    tipoNota: 5
+  - batida: 4
+    tipoNota: 1
+  - batida: 4
+    tipoNota: 5
+  - batida: 4.5
+    tipoNota: 6
+  - batida: 5
+    tipoNota: 0
+  - batida: 5
+    tipoNota: 8
+  - batida: 5
+    tipoNota: 7
+  - batida: 5.5
+    tipoNota: 5
+  - batida: 6
+    tipoNota: 1
+  - batida: 6
+    tipoNota: 5
+  - batida: 6.5
+    tipoNota: 5
+  - batida: 7
+    tipoNota: 0
+  - batida: 7
+    tipoNota: 5
+  - batida: 7.5
+    tipoNota: 6
+  - batida: 8
+    tipoNota: 1
+  - batida: 8
+    tipoNota: 7

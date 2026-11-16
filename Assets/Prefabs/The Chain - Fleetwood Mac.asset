@@ -1,0 +1,1060 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37c1a82ba2f2424c871a5911c13093d, type: 3}
+  m_Name: The Chain - Fleetwood Mac
+  m_EditorClassIdentifier: Assembly-CSharp::MapaMusica
+  nomeMusica: The Chain - Fleetwood Mac
+  arquivoAudio: {fileID: 8300000, guid: 8fe90916d69129644adb079367b87c0e, type: 3}
+  bpm: 75.8
+  offsetPrimeiroBeatSegundos: 2.6
+  tempoAntecedenciaAureola: 1.5
+  partituraEmTexto: "# =================================================================\r\n#
+    FLEETWOOD MAC - THE CHAIN (TRADU\xC7\xC3O ESTRITA DO PDF - 81 COMPASSOS)\r\n#
+    BPM: 76 | Time Signature: 4/4 | Approach Time: 2.0\r\n# =================================================================\r\n\r\n#
+    --- INTRO & VERSE 1 (Compassos 1 a 16) ---\r\n# Compasso 1\r\n1.0|Kick, 2.0|Kick,
+    3.0|Kick, 4.0|Kick\r\n# Compasso 2\r\n5.0|Kick, 6.0|Kick, 7.0|Kick, 8.0|Kick\r\n#
+    Compasso 3\r\n9.0|Kick, 10.0|Kick, 11.0|Kick, 12.0|Kick\r\n# Compasso 4\r\n13.0|Kick,
+    14.0|Kick, 15.0|Kick, 16.0|Kick\r\n# Compasso 5\r\n17.0|Kick, 18.0|Kick, 19.0|Kick,
+    20.0|Kick\r\n# Compasso 6\r\n21.0|Kick, 22.0|Kick, 23.0|Kick, 24.0|Kick\r\n#
+    Compasso 7\r\n25.0|Kick, 26.0|Kick, 27.0|Kick, 28.0|Kick\r\n# Compasso 8 (Bumbo
+    + Prato no tempo 3, pausa no 4)\r\n29.0|Kick, 30.0|Kick, 31.0|Kick, 31.0|Ride\r\n#
+    Compasso 9\r\n33.0|Kick, 34.0|Kick, 35.0|Kick, 36.0|Kick\r\n# Compasso 10\r\n37.0|Kick,
+    38.0|Kick, 39.0|Kick, 40.0|Kick\r\n# Compasso 11\r\n41.0|Kick, 42.0|Kick, 43.0|Kick,
+    44.0|Kick\r\n# Compasso 12\r\n45.0|Kick, 46.0|Kick, 47.0|Kick, 48.0|Kick\r\n#
+    Compasso 13\r\n49.0|Kick, 50.0|Kick, 51.0|Kick, 52.0|Kick\r\n# Compasso 14\r\n53.0|Kick,
+    54.0|Kick, 55.0|Kick, 56.0|Kick\r\n# Compasso 15\r\n57.0|Kick, 58.0|Kick, 59.0|Kick,
+    60.0|Kick\r\n# Compasso 16 (Virada no tempo 4: Kick -> Snare -> HighTom)\r\n61.0|Kick,
+    62.0|Kick, 63.0|Kick, 64.0|Kick, 64.25|Snare, 64.5|HighTom\r\n\r\n# --- CHORUS
+    1 (Compassos 17 a 24) ---\r\n# Compasso 17\r\n65.0|Kick, 65.0|Snare, 65.0|FloorTom,
+    65.5|Kick\r\n66.0|Kick, 66.0|Snare, 66.0|FloorTom, 66.5|Kick\r\n67.0|Kick, 67.0|Snare,
+    67.0|FloorTom, 67.5|Kick\r\n68.0|Kick, 68.0|Snare, 68.0|FloorTom, 68.5|Kick\r\n\r\n#
+    Compasso 18\r\n69.0|Kick, 69.0|Snare, 69.0|FloorTom, 69.5|Kick\r\n70.0|Kick,
+    70.0|Snare, 70.0|FloorTom, 70.5|Kick\r\n71.0|Kick, 71.0|Snare, 71.0|FloorTom,
+    71.5|Kick\r\n72.0|Kick, 72.0|Snare, 72.0|FloorTom, 72.5|Kick\r\n\r\n# Compasso
+    19\r\n73.0|Kick, 73.0|Crash, 73.0|Snare, 73.5|Kick\r\n74.0|Kick, 74.0|Snare,
+    74.0|FloorTom, 74.5|Kick\r\n75.0|Kick, 75.0|Snare, 75.0|FloorTom, 75.5|Kick\r\n76.0|Kick,
+    76.0|Snare, 76.25|Snare, 76.5|Snare, 76.75|Snare\r\n\r\n# Compasso 20\r\n77.0|Kick,
+    77.0|Crash, 77.0|Snare, 77.5|Kick\r\n78.0|Kick, 78.0|Snare, 78.0|FloorTom, 78.5|Kick,
+    78.75|Snare\r\n79.0|Kick, 79.0|Snare, 79.25|Snare, 79.5|Snare, 79.75|Snare\r\n80.0|Kick,
+    80.0|Snare, 80.25|Snare, 80.5|Snare, 80.75|Snare\r\n\r\n# Compasso 21\r\n81.0|Kick,
+    81.0|Crash, 81.0|Snare, 81.0|FloorTom, 81.5|Kick\r\n82.0|Kick, 82.0|Snare, 82.0|FloorTom,
+    82.5|Kick\r\n83.0|Kick, 83.0|Snare, 83.0|FloorTom, 83.5|Kick\r\n84.0|Kick, 84.0|Snare,
+    84.0|FloorTom, 84.5|Kick\r\n\r\n# Compasso 22\r\n85.0|Kick, 85.0|Snare, 85.0|FloorTom,
+    85.5|Kick\r\n86.0|Kick, 86.0|Snare, 86.0|FloorTom, 86.5|Kick\r\n87.0|Kick, 87.0|Snare,
+    87.0|FloorTom, 87.5|Kick\r\n88.0|Kick, 88.0|Snare, 88.0|FloorTom, 88.5|Kick\r\n\r\n#
+    Compasso 23\r\n89.0|Kick, 89.0|Crash, 89.0|Snare, 89.0|FloorTom, 89.5|Kick\r\n90.0|Kick,
+    90.0|Snare, 90.0|FloorTom, 90.5|Kick\r\n91.0|Kick, 91.0|Snare, 91.0|FloorTom,
+    91.5|Kick\r\n92.0|Kick, 92.0|Snare, 92.0|FloorTom, 92.5|Kick\r\n\r\n# Compasso
+    24\r\n93.0|Kick, 93.0|Snare, 93.0|FloorTom, 93.5|Kick\r\n94.0|Kick, 94.0|Snare,
+    94.0|FloorTom, 94.5|Kick, 94.75|Snare\r\n95.0|Kick, 95.0|Snare, 95.25|Snare,
+    95.5|Snare, 95.75|Snare\r\n96.0|Kick, 96.0|Snare, 96.25|Snare, 96.5|Snare, 96.75|Snare\r\n\r\n#
+    --- RE-INTRO & VERSE 2 (Compassos 25 a 40) ---\r\n# Compasso 25 (Pausa)\r\n#
+    Compasso 26 (Pausa)\r\n\r\n# Compasso 27\r\n105.0|Kick, 106.0|Kick, 107.0|Kick,
+    107.5|Ride, 108.0|Kick\r\n# Compasso 28 (Abertura o e fechamento + de Hi-Hat
+    no tempo 3)\r\n109.0|Kick, 110.0|Kick, 111.0|Kick, 111.0|HHO, 111.25|HHC\r\n#
+    Compasso 29\r\n113.0|Kick, 114.0|Kick, 115.0|Kick, 116.0|Kick\r\n# Compasso 30\r\n117.0|Kick,
+    118.0|Kick, 119.0|Kick, 120.0|Kick\r\n# Compasso 31\r\n121.0|Kick, 122.0|Kick,
+    123.0|Kick, 124.0|Kick\r\n# Compasso 32 (Tercina no Hi-Hat no tempo 3.5 -> 4.0)\r\n125.0|Kick,
+    126.0|Kick, 127.0|Kick, 127.5|HHC, 127.67|HHC, 127.83|HHC, 128.0|HHC\r\n# Compasso
+    33\r\n129.0|Kick, 130.0|Kick, 131.0|Kick, 132.0|Kick\r\n# Compasso 34\r\n133.0|Kick,
+    134.0|Kick, 135.0|Kick, 136.0|Kick\r\n# Compasso 35\r\n137.0|Kick, 138.0|Kick,
+    139.0|Kick, 140.0|Kick\r\n# Compasso 36\r\n141.0|Kick, 142.0|Kick, 143.0|Kick,
+    144.0|Kick\r\n# Compasso 37\r\n145.0|Kick, 146.0|Kick, 147.0|Kick, 148.0|Kick\r\n#
+    Compasso 38\r\n149.0|Kick, 150.0|Kick, 151.0|Kick, 152.0|Kick\r\n# Compasso 39\r\n153.0|Kick,
+    154.0|Kick, 155.0|Kick, 156.0|Kick\r\n# Compasso 40 (Virada no tempo 4)\r\n157.0|Kick,
+    158.0|Kick, 159.0|Kick, 160.0|Kick, 160.25|Snare, 160.5|Snare\r\n\r\n# --- CHORUS
+    2 (Compassos 41 a 52) ---\r\n# Compasso 41\r\n161.0|Kick, 161.0|Snare, 161.0|FloorTom,
+    161.5|Kick\r\n162.0|Kick, 162.0|Snare, 162.0|FloorTom, 162.5|Kick\r\n163.0|Kick,
+    163.0|Snare, 163.0|FloorTom, 163.5|Kick\r\n164.0|Kick, 164.0|Snare, 164.0|FloorTom,
+    164.5|Kick\r\n\r\n# Compasso 42\r\n165.0|Kick, 165.0|Snare, 165.0|FloorTom, 165.5|Kick\r\n166.0|Kick,
+    166.0|Snare, 166.0|FloorTom, 166.5|Kick\r\n167.0|Kick, 167.0|Snare, 167.0|FloorTom,
+    167.5|Kick\r\n168.0|Kick, 168.0|Snare, 168.0|FloorTom, 168.5|Kick\r\n\r\n# Compasso
+    43\r\n169.0|Kick, 169.0|Crash, 169.0|Snare, 169.5|Kick\r\n170.0|Kick, 170.0|Snare,
+    170.0|FloorTom, 170.5|Kick\r\n171.0|Kick, 171.0|Snare, 171.0|FloorTom, 171.5|Kick\r\n172.0|Kick,
+    172.0|Snare, 172.0|FloorTom, 172.5|Kick\r\n\r\n# Compasso 44\r\n173.0|Kick, 173.0|Crash,
+    173.0|Snare, 173.5|Kick\r\n174.0|Kick, 174.0|Snare, 174.0|FloorTom, 174.5|Kick,
+    174.75|Snare\r\n175.0|Kick, 175.0|Snare, 175.25|Snare, 175.5|Snare, 175.75|Snare\r\n176.0|Kick,
+    176.0|Snare, 176.25|Snare, 176.5|Snare, 176.75|Snare\r\n\r\n# Compasso 45\r\n177.0|Kick,
+    177.0|Crash, 177.0|Snare, 177.0|FloorTom, 177.5|Kick\r\n178.0|Kick, 178.0|Snare,
+    178.0|FloorTom, 178.5|Kick\r\n179.0|Kick, 179.0|Snare, 179.0|FloorTom, 179.5|Kick\r\n180.0|Kick,
+    180.0|Snare, 180.0|FloorTom, 180.5|Kick\r\n\r\n# Compasso 46\r\n181.0|Kick, 181.0|Snare,
+    181.0|FloorTom, 181.5|Kick\r\n182.0|Kick, 182.0|Snare, 182.0|FloorTom, 182.5|Kick\r\n183.0|Kick,
+    183.0|Snare, 183.0|FloorTom, 183.5|Kick\r\n184.0|Kick, 184.0|Snare, 184.0|FloorTom,
+    184.5|Kick\r\n\r\n# Compasso 47\r\n185.0|Kick, 185.0|Crash, 185.0|Snare, 185.0|FloorTom,
+    185.5|Kick\r\n186.0|Kick, 186.0|Snare, 186.0|FloorTom, 186.5|Kick\r\n187.0|Kick,
+    187.0|Snare, 187.0|FloorTom, 187.5|Kick\r\n188.0|Kick, 188.0|Snare, 188.0|FloorTom,
+    188.5|Kick\r\n\r\n# Compasso 48\r\n189.0|Kick, 189.0|Snare, 189.0|FloorTom, 189.5|Kick\r\n190.0|Kick,
+    190.0|Snare, 190.0|FloorTom, 190.5|Kick, 190.75|Snare\r\n191.0|Kick, 191.0|Snare,
+    191.25|Snare, 191.5|Snare, 191.75|Snare\r\n192.0|Kick, 192.0|Snare, 192.25|Snare,
+    192.5|Snare, 192.75|Snare\r\n\r\n# Compasso 49\r\n193.0|Kick, 193.0|Crash, 193.0|Snare,
+    193.0|FloorTom, 193.5|Kick\r\n194.0|Kick, 194.0|Snare, 194.0|FloorTom, 194.5|Kick\r\n195.0|Kick,
+    195.0|Snare, 195.0|FloorTom, 195.5|Kick\r\n196.0|Kick, 196.0|Snare, 196.0|FloorTom,
+    196.5|Kick\r\n\r\n# Compasso 50\r\n197.0|Kick, 197.0|Crash, 197.0|Snare, 197.0|FloorTom,
+    197.5|Kick\r\n198.0|Kick, 198.0|Snare, 198.0|FloorTom, 198.5|Kick\r\n199.0|Kick,
+    199.0|Snare, 199.0|FloorTom, 199.5|Crash, 199.5|Kick\r\n200.0|Kick, 200.0|Snare,
+    200.0|FloorTom, 200.5|Kick\r\n\r\n# Compasso 51\r\n201.0|Kick, 201.0|Snare, 201.0|FloorTom,
+    201.5|Kick\r\n202.0|Kick, 202.0|Snare, 202.0|FloorTom, 202.5|Kick\r\n203.0|Kick,
+    203.0|Crash, 203.0|Snare, 203.0|FloorTom, 203.5|Kick\r\n204.0|Kick, 204.0|Snare,
+    204.0|FloorTom, 204.5|Kick\r\n\r\n# Compasso 52\r\n205.0|Kick, 205.0|Crash, 205.0|Snare,
+    205.5|Snare, 205.75|Snare\r\n206.0|Kick, 206.0|Snare, 206.25|Snare, 206.5|Snare,
+    206.75|Snare\r\n207.0|Kick, 207.0|Snare, 207.25|Snare, 207.5|Snare, 207.75|Snare\r\n208.0|Kick,
+    208.0|Snare, 208.25|Snare, 208.5|Snare, 208.75|Snare\r\n\r\n# --- INTERLUDE (Compassos
+    53 a 56) ---\r\n# Compasso 53\r\n209.0|"
+  notas:
+  - batida: 1
+    tipoNota: 0
+  - batida: 2
+    tipoNota: 0
+  - batida: 3
+    tipoNota: 0
+  - batida: 4
+    tipoNota: 0
+  - batida: 5
+    tipoNota: 0
+  - batida: 6
+    tipoNota: 0
+  - batida: 7
+    tipoNota: 0
+  - batida: 8
+    tipoNota: 0
+  - batida: 9
+    tipoNota: 0
+  - batida: 10
+    tipoNota: 0
+  - batida: 11
+    tipoNota: 0
+  - batida: 12
+    tipoNota: 0
+  - batida: 13
+    tipoNota: 0
+  - batida: 14
+    tipoNota: 0
+  - batida: 15
+    tipoNota: 0
+  - batida: 16
+    tipoNota: 0
+  - batida: 17
+    tipoNota: 0
+  - batida: 18
+    tipoNota: 0
+  - batida: 19
+    tipoNota: 0
+  - batida: 20
+    tipoNota: 0
+  - batida: 21
+    tipoNota: 0
+  - batida: 22
+    tipoNota: 0
+  - batida: 23
+    tipoNota: 0
+  - batida: 24
+    tipoNota: 0
+  - batida: 25
+    tipoNota: 0
+  - batida: 26
+    tipoNota: 0
+  - batida: 27
+    tipoNota: 0
+  - batida: 28
+    tipoNota: 0
+  - batida: 29
+    tipoNota: 0
+  - batida: 30
+    tipoNota: 0
+  - batida: 31
+    tipoNota: 0
+  - batida: 31
+    tipoNota: 9
+  - batida: 33
+    tipoNota: 0
+  - batida: 34
+    tipoNota: 0
+  - batida: 35
+    tipoNota: 0
+  - batida: 36
+    tipoNota: 0
+  - batida: 37
+    tipoNota: 0
+  - batida: 38
+    tipoNota: 0
+  - batida: 39
+    tipoNota: 0
+  - batida: 40
+    tipoNota: 0
+  - batida: 41
+    tipoNota: 0
+  - batida: 42
+    tipoNota: 0
+  - batida: 43
+    tipoNota: 0
+  - batida: 44
+    tipoNota: 0
+  - batida: 45
+    tipoNota: 0
+  - batida: 46
+    tipoNota: 0
+  - batida: 47
+    tipoNota: 0
+  - batida: 48
+    tipoNota: 0
+  - batida: 49
+    tipoNota: 0
+  - batida: 50
+    tipoNota: 0
+  - batida: 51
+    tipoNota: 0
+  - batida: 52
+    tipoNota: 0
+  - batida: 53
+    tipoNota: 0
+  - batida: 54
+    tipoNota: 0
+  - batida: 55
+    tipoNota: 0
+  - batida: 56
+    tipoNota: 0
+  - batida: 57
+    tipoNota: 0
+  - batida: 58
+    tipoNota: 0
+  - batida: 59
+    tipoNota: 0
+  - batida: 60
+    tipoNota: 0
+  - batida: 61
+    tipoNota: 0
+  - batida: 62
+    tipoNota: 0
+  - batida: 63
+    tipoNota: 0
+  - batida: 64
+    tipoNota: 0
+  - batida: 64.25
+    tipoNota: 1
+  - batida: 64.5
+    tipoNota: 2
+  - batida: 65
+    tipoNota: 0
+  - batida: 65
+    tipoNota: 1
+  - batida: 65
+    tipoNota: 4
+  - batida: 65.5
+    tipoNota: 0
+  - batida: 66
+    tipoNota: 1
+  - batida: 66
+    tipoNota: 4
+  - batida: 66
+    tipoNota: 0
+  - batida: 66.5
+    tipoNota: 0
+  - batida: 67
+    tipoNota: 0
+  - batida: 67
+    tipoNota: 1
+  - batida: 67
+    tipoNota: 4
+  - batida: 67.5
+    tipoNota: 0
+  - batida: 68
+    tipoNota: 0
+  - batida: 68
+    tipoNota: 1
+  - batida: 68
+    tipoNota: 4
+  - batida: 68.5
+    tipoNota: 0
+  - batida: 69
+    tipoNota: 0
+  - batida: 69
+    tipoNota: 1
+  - batida: 69
+    tipoNota: 4
+  - batida: 69.5
+    tipoNota: 0
+  - batida: 70
+    tipoNota: 4
+  - batida: 70
+    tipoNota: 0
+  - batida: 70
+    tipoNota: 1
+  - batida: 70.5
+    tipoNota: 0
+  - batida: 71
+    tipoNota: 0
+  - batida: 71
+    tipoNota: 1
+  - batida: 71
+    tipoNota: 4
+  - batida: 71.5
+    tipoNota: 0
+  - batida: 72
+    tipoNota: 0
+  - batida: 72
+    tipoNota: 1
+  - batida: 72
+    tipoNota: 4
+  - batida: 72.5
+    tipoNota: 0
+  - batida: 73
+    tipoNota: 1
+  - batida: 73
+    tipoNota: 0
+  - batida: 73
+    tipoNota: 8
+  - batida: 73.5
+    tipoNota: 0
+  - batida: 74
+    tipoNota: 0
+  - batida: 74
+    tipoNota: 1
+  - batida: 74
+    tipoNota: 4
+  - batida: 74.5
+    tipoNota: 0
+  - batida: 75
+    tipoNota: 0
+  - batida: 75
+    tipoNota: 1
+  - batida: 75
+    tipoNota: 4
+  - batida: 75.5
+    tipoNota: 0
+  - batida: 76
+    tipoNota: 0
+  - batida: 76
+    tipoNota: 1
+  - batida: 76.25
+    tipoNota: 1
+  - batida: 76.5
+    tipoNota: 1
+  - batida: 76.75
+    tipoNota: 1
+  - batida: 77
+    tipoNota: 8
+  - batida: 77
+    tipoNota: 1
+  - batida: 77
+    tipoNota: 0
+  - batida: 77.5
+    tipoNota: 0
+  - batida: 78
+    tipoNota: 0
+  - batida: 78
+    tipoNota: 1
+  - batida: 78
+    tipoNota: 4
+  - batida: 78.5
+    tipoNota: 0
+  - batida: 78.75
+    tipoNota: 1
+  - batida: 79
+    tipoNota: 0
+  - batida: 79
+    tipoNota: 1
+  - batida: 79.25
+    tipoNota: 1
+  - batida: 79.5
+    tipoNota: 1
+  - batida: 79.75
+    tipoNota: 1
+  - batida: 80
+    tipoNota: 0
+  - batida: 80
+    tipoNota: 1
+  - batida: 80.25
+    tipoNota: 1
+  - batida: 80.5
+    tipoNota: 1
+  - batida: 80.75
+    tipoNota: 1
+  - batida: 81
+    tipoNota: 0
+  - batida: 81
+    tipoNota: 8
+  - batida: 81
+    tipoNota: 1
+  - batida: 81
+    tipoNota: 4
+  - batida: 81.5
+    tipoNota: 0
+  - batida: 82
+    tipoNota: 0
+  - batida: 82
+    tipoNota: 1
+  - batida: 82
+    tipoNota: 4
+  - batida: 82.5
+    tipoNota: 0
+  - batida: 83
+    tipoNota: 0
+  - batida: 83
+    tipoNota: 1
+  - batida: 83
+    tipoNota: 4
+  - batida: 83.5
+    tipoNota: 0
+  - batida: 84
+    tipoNota: 0
+  - batida: 84
+    tipoNota: 1
+  - batida: 84
+    tipoNota: 4
+  - batida: 84.5
+    tipoNota: 0
+  - batida: 85
+    tipoNota: 0
+  - batida: 85
+    tipoNota: 1
+  - batida: 85
+    tipoNota: 4
+  - batida: 85.5
+    tipoNota: 0
+  - batida: 86
+    tipoNota: 0
+  - batida: 86
+    tipoNota: 1
+  - batida: 86
+    tipoNota: 4
+  - batida: 86.5
+    tipoNota: 0
+  - batida: 87
+    tipoNota: 1
+  - batida: 87
+    tipoNota: 4
+  - batida: 87
+    tipoNota: 0
+  - batida: 87.5
+    tipoNota: 0
+  - batida: 88
+    tipoNota: 0
+  - batida: 88
+    tipoNota: 1
+  - batida: 88
+    tipoNota: 4
+  - batida: 88.5
+    tipoNota: 0
+  - batida: 89
+    tipoNota: 0
+  - batida: 89
+    tipoNota: 8
+  - batida: 89
+    tipoNota: 1
+  - batida: 89
+    tipoNota: 4
+  - batida: 89.5
+    tipoNota: 0
+  - batida: 90
+    tipoNota: 0
+  - batida: 90
+    tipoNota: 1
+  - batida: 90
+    tipoNota: 4
+  - batida: 90.5
+    tipoNota: 0
+  - batida: 91
+    tipoNota: 4
+  - batida: 91
+    tipoNota: 0
+  - batida: 91
+    tipoNota: 1
+  - batida: 91.5
+    tipoNota: 0
+  - batida: 92
+    tipoNota: 0
+  - batida: 92
+    tipoNota: 1
+  - batida: 92
+    tipoNota: 4
+  - batida: 92.5
+    tipoNota: 0
+  - batida: 93
+    tipoNota: 0
+  - batida: 93
+    tipoNota: 1
+  - batida: 93
+    tipoNota: 4
+  - batida: 93.5
+    tipoNota: 0
+  - batida: 94
+    tipoNota: 0
+  - batida: 94
+    tipoNota: 1
+  - batida: 94
+    tipoNota: 4
+  - batida: 94.5
+    tipoNota: 0
+  - batida: 94.75
+    tipoNota: 1
+  - batida: 95
+    tipoNota: 0
+  - batida: 95
+    tipoNota: 1
+  - batida: 95.25
+    tipoNota: 1
+  - batida: 95.5
+    tipoNota: 1
+  - batida: 95.75
+    tipoNota: 1
+  - batida: 96
+    tipoNota: 0
+  - batida: 96
+    tipoNota: 1
+  - batida: 96.25
+    tipoNota: 1
+  - batida: 96.5
+    tipoNota: 1
+  - batida: 96.75
+    tipoNota: 1
+  - batida: 105
+    tipoNota: 0
+  - batida: 106
+    tipoNota: 0
+  - batida: 107
+    tipoNota: 0
+  - batida: 107.5
+    tipoNota: 9
+  - batida: 108
+    tipoNota: 0
+  - batida: 109
+    tipoNota: 0
+  - batida: 110
+    tipoNota: 0
+  - batida: 111
+    tipoNota: 0
+  - batida: 111
+    tipoNota: 6
+  - batida: 111.25
+    tipoNota: 5
+  - batida: 113
+    tipoNota: 0
+  - batida: 114
+    tipoNota: 0
+  - batida: 115
+    tipoNota: 0
+  - batida: 116
+    tipoNota: 0
+  - batida: 117
+    tipoNota: 0
+  - batida: 118
+    tipoNota: 0
+  - batida: 119
+    tipoNota: 0
+  - batida: 120
+    tipoNota: 0
+  - batida: 121
+    tipoNota: 0
+  - batida: 122
+    tipoNota: 0
+  - batida: 123
+    tipoNota: 0
+  - batida: 124
+    tipoNota: 0
+  - batida: 125
+    tipoNota: 0
+  - batida: 126
+    tipoNota: 0
+  - batida: 127
+    tipoNota: 0
+  - batida: 127.5
+    tipoNota: 5
+  - batida: 127.67
+    tipoNota: 5
+  - batida: 127.83
+    tipoNota: 5
+  - batida: 128
+    tipoNota: 5
+  - batida: 129
+    tipoNota: 0
+  - batida: 130
+    tipoNota: 0
+  - batida: 131
+    tipoNota: 0
+  - batida: 132
+    tipoNota: 0
+  - batida: 133
+    tipoNota: 0
+  - batida: 134
+    tipoNota: 0
+  - batida: 135
+    tipoNota: 0
+  - batida: 136
+    tipoNota: 0
+  - batida: 137
+    tipoNota: 0
+  - batida: 138
+    tipoNota: 0
+  - batida: 139
+    tipoNota: 0
+  - batida: 140
+    tipoNota: 0
+  - batida: 141
+    tipoNota: 0
+  - batida: 142
+    tipoNota: 0
+  - batida: 143
+    tipoNota: 0
+  - batida: 144
+    tipoNota: 0
+  - batida: 145
+    tipoNota: 0
+  - batida: 146
+    tipoNota: 0
+  - batida: 147
+    tipoNota: 0
+  - batida: 148
+    tipoNota: 0
+  - batida: 149
+    tipoNota: 0
+  - batida: 150
+    tipoNota: 0
+  - batida: 151
+    tipoNota: 0
+  - batida: 152
+    tipoNota: 0
+  - batida: 153
+    tipoNota: 0
+  - batida: 154
+    tipoNota: 0
+  - batida: 155
+    tipoNota: 0
+  - batida: 156
+    tipoNota: 0
+  - batida: 157
+    tipoNota: 0
+  - batida: 158
+    tipoNota: 0
+  - batida: 159
+    tipoNota: 0
+  - batida: 160
+    tipoNota: 0
+  - batida: 160.25
+    tipoNota: 1
+  - batida: 160.5
+    tipoNota: 1
+  - batida: 161
+    tipoNota: 0
+  - batida: 161
+    tipoNota: 1
+  - batida: 161
+    tipoNota: 4
+  - batida: 161.5
+    tipoNota: 0
+  - batida: 162
+    tipoNota: 0
+  - batida: 162
+    tipoNota: 1
+  - batida: 162
+    tipoNota: 4
+  - batida: 162.5
+    tipoNota: 0
+  - batida: 163
+    tipoNota: 0
+  - batida: 163
+    tipoNota: 1
+  - batida: 163
+    tipoNota: 4
+  - batida: 163.5
+    tipoNota: 0
+  - batida: 164
+    tipoNota: 1
+  - batida: 164
+    tipoNota: 4
+  - batida: 164
+    tipoNota: 0
+  - batida: 164.5
+    tipoNota: 0
+  - batida: 165
+    tipoNota: 0
+  - batida: 165
+    tipoNota: 1
+  - batida: 165
+    tipoNota: 4
+  - batida: 165.5
+    tipoNota: 0
+  - batida: 166
+    tipoNota: 0
+  - batida: 166
+    tipoNota: 1
+  - batida: 166
+    tipoNota: 4
+  - batida: 166.5
+    tipoNota: 0
+  - batida: 167
+    tipoNota: 0
+  - batida: 167
+    tipoNota: 1
+  - batida: 167
+    tipoNota: 4
+  - batida: 167.5
+    tipoNota: 0
+  - batida: 168
+    tipoNota: 4
+  - batida: 168
+    tipoNota: 1
+  - batida: 168
+    tipoNota: 0
+  - batida: 168.5
+    tipoNota: 0
+  - batida: 169
+    tipoNota: 0
+  - batida: 169
+    tipoNota: 8
+  - batida: 169
+    tipoNota: 1
+  - batida: 169.5
+    tipoNota: 0
+  - batida: 170
+    tipoNota: 0
+  - batida: 170
+    tipoNota: 1
+  - batida: 170
+    tipoNota: 4
+  - batida: 170.5
+    tipoNota: 0
+  - batida: 171
+    tipoNota: 0
+  - batida: 171
+    tipoNota: 1
+  - batida: 171
+    tipoNota: 4
+  - batida: 171.5
+    tipoNota: 0
+  - batida: 172
+    tipoNota: 4
+  - batida: 172
+    tipoNota: 0
+  - batida: 172
+    tipoNota: 1
+  - batida: 172.5
+    tipoNota: 0
+  - batida: 173
+    tipoNota: 0
+  - batida: 173
+    tipoNota: 8
+  - batida: 173
+    tipoNota: 1
+  - batida: 173.5
+    tipoNota: 0
+  - batida: 174
+    tipoNota: 0
+  - batida: 174
+    tipoNota: 1
+  - batida: 174
+    tipoNota: 4
+  - batida: 174.5
+    tipoNota: 0
+  - batida: 174.75
+    tipoNota: 1
+  - batida: 175
+    tipoNota: 0
+  - batida: 175
+    tipoNota: 1
+  - batida: 175.25
+    tipoNota: 1
+  - batida: 175.5
+    tipoNota: 1
+  - batida: 175.75
+    tipoNota: 1
+  - batida: 176
+    tipoNota: 0
+  - batida: 176
+    tipoNota: 1
+  - batida: 176.25
+    tipoNota: 1
+  - batida: 176.5
+    tipoNota: 1
+  - batida: 176.75
+    tipoNota: 1
+  - batida: 177
+    tipoNota: 0
+  - batida: 177
+    tipoNota: 8
+  - batida: 177
+    tipoNota: 1
+  - batida: 177
+    tipoNota: 4
+  - batida: 177.5
+    tipoNota: 0
+  - batida: 178
+    tipoNota: 1
+  - batida: 178
+    tipoNota: 4
+  - batida: 178
+    tipoNota: 0
+  - batida: 178.5
+    tipoNota: 0
+  - batida: 179
+    tipoNota: 0
+  - batida: 179
+    tipoNota: 1
+  - batida: 179
+    tipoNota: 4
+  - batida: 179.5
+    tipoNota: 0
+  - batida: 180
+    tipoNota: 0
+  - batida: 180
+    tipoNota: 1
+  - batida: 180
+    tipoNota: 4
+  - batida: 180.5
+    tipoNota: 0
+  - batida: 181
+    tipoNota: 0
+  - batida: 181
+    tipoNota: 1
+  - batida: 181
+    tipoNota: 4
+  - batida: 181.5
+    tipoNota: 0
+  - batida: 182
+    tipoNota: 4
+  - batida: 182
+    tipoNota: 1
+  - batida: 182
+    tipoNota: 0
+  - batida: 182.5
+    tipoNota: 0
+  - batida: 183
+    tipoNota: 0
+  - batida: 183
+    tipoNota: 1
+  - batida: 183
+    tipoNota: 4
+  - batida: 183.5
+    tipoNota: 0
+  - batida: 184
+    tipoNota: 0
+  - batida: 184
+    tipoNota: 1
+  - batida: 184
+    tipoNota: 4
+  - batida: 184.5
+    tipoNota: 0
+  - batida: 185
+    tipoNota: 1
+  - batida: 185
+    tipoNota: 4
+  - batida: 185
+    tipoNota: 0
+  - batida: 185
+    tipoNota: 8
+  - batida: 185.5
+    tipoNota: 0
+  - batida: 186
+    tipoNota: 0
+  - batida: 186
+    tipoNota: 1
+  - batida: 186
+    tipoNota: 4
+  - batida: 186.5
+    tipoNota: 0
+  - batida: 187
+    tipoNota: 0
+  - batida: 187
+    tipoNota: 1
+  - batida: 187
+    tipoNota: 4
+  - batida: 187.5
+    tipoNota: 0
+  - batida: 188
+    tipoNota: 0
+  - batida: 188
+    tipoNota: 1
+  - batida: 188
+    tipoNota: 4
+  - batida: 188.5
+    tipoNota: 0
+  - batida: 189
+    tipoNota: 4
+  - batida: 189
+    tipoNota: 1
+  - batida: 189
+    tipoNota: 0
+  - batida: 189.5
+    tipoNota: 0
+  - batida: 190
+    tipoNota: 0
+  - batida: 190
+    tipoNota: 1
+  - batida: 190
+    tipoNota: 4
+  - batida: 190.5
+    tipoNota: 0
+  - batida: 190.75
+    tipoNota: 1
+  - batida: 191
+    tipoNota: 0
+  - batida: 191
+    tipoNota: 1
+  - batida: 191.25
+    tipoNota: 1
+  - batida: 191.5
+    tipoNota: 1
+  - batida: 191.75
+    tipoNota: 1
+  - batida: 192
+    tipoNota: 0
+  - batida: 192
+    tipoNota: 1
+  - batida: 192.25
+    tipoNota: 1
+  - batida: 192.5
+    tipoNota: 1
+  - batida: 192.75
+    tipoNota: 1
+  - batida: 193
+    tipoNota: 0
+  - batida: 193
+    tipoNota: 8
+  - batida: 193
+    tipoNota: 1
+  - batida: 193
+    tipoNota: 4
+  - batida: 193.5
+    tipoNota: 0
+  - batida: 194
+    tipoNota: 0
+  - batida: 194
+    tipoNota: 1
+  - batida: 194
+    tipoNota: 4
+  - batida: 194.5
+    tipoNota: 0
+  - batida: 195
+    tipoNota: 0
+  - batida: 195
+    tipoNota: 1
+  - batida: 195
+    tipoNota: 4
+  - batida: 195.5
+    tipoNota: 0
+  - batida: 196
+    tipoNota: 0
+  - batida: 196
+    tipoNota: 1
+  - batida: 196
+    tipoNota: 4
+  - batida: 196.5
+    tipoNota: 0
+  - batida: 197
+    tipoNota: 0
+  - batida: 197
+    tipoNota: 8
+  - batida: 197
+    tipoNota: 1
+  - batida: 197
+    tipoNota: 4
+  - batida: 197.5
+    tipoNota: 0
+  - batida: 198
+    tipoNota: 0
+  - batida: 198
+    tipoNota: 1
+  - batida: 198
+    tipoNota: 4
+  - batida: 198.5
+    tipoNota: 0
+  - batida: 199
+    tipoNota: 4
+  - batida: 199
+    tipoNota: 1
+  - batida: 199
+    tipoNota: 0
+  - batida: 199.5
+    tipoNota: 8
+  - batida: 199.5
+    tipoNota: 0
+  - batida: 200
+    tipoNota: 0
+  - batida: 200
+    tipoNota: 1
+  - batida: 200
+    tipoNota: 4
+  - batida: 200.5
+    tipoNota: 0
+  - batida: 201
+    tipoNota: 0
+  - batida: 201
+    tipoNota: 1
+  - batida: 201
+    tipoNota: 4
+  - batida: 201.5
+    tipoNota: 0
+  - batida: 202
+    tipoNota: 0
+  - batida: 202
+    tipoNota: 1
+  - batida: 202
+    tipoNota: 4
+  - batida: 202.5
+    tipoNota: 0
+  - batida: 203
+    tipoNota: 0
+  - batida: 203
+    tipoNota: 8
+  - batida: 203
+    tipoNota: 1
+  - batida: 203
+    tipoNota: 4
+  - batida: 203.5
+    tipoNota: 0
+  - batida: 204
+    tipoNota: 0
+  - batida: 204
+    tipoNota: 1
+  - batida: 204
+    tipoNota: 4
+  - batida: 204.5
+    tipoNota: 0
+  - batida: 205
+    tipoNota: 0
+  - batida: 205
+    tipoNota: 8
+  - batida: 205
+    tipoNota: 1
+  - batida: 205.5
+    tipoNota: 1
+  - batida: 205.75
+    tipoNota: 1
+  - batida: 206
+    tipoNota: 1
+  - batida: 206
+    tipoNota: 0
+  - batida: 206.25
+    tipoNota: 1
+  - batida: 206.5
+    tipoNota: 1
+  - batida: 206.75
+    tipoNota: 1
+  - batida: 207
+    tipoNota: 0
+  - batida: 207
+    tipoNota: 1
+  - batida: 207.25
+    tipoNota: 1
+  - batida: 207.5
+    tipoNota: 1
+  - batida: 207.75
+    tipoNota: 1
+  - batida: 208
+    tipoNota: 0
+  - batida: 208
+    tipoNota: 1
+  - batida: 208.25
+    tipoNota: 1
+  - batida: 208.5
+    tipoNota: 1
+  - batida: 208.75
+    tipoNota: 1

@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -41,3 +41,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3176472587
+    locked: 0
+  - name: Plateia
+    uniqueID: 2385435349
+    locked: 0
+  - name: Palco
+    uniqueID: 2225047635
+    locked: 0
+  - name: Ride e Crash
+    uniqueID: 3892474257
+    locked: 0
+  - name: Kick e Tons
+    uniqueID: 3727577597
+    locked: 0
+  - name: Snare e Floor Tom
+    uniqueID: 3885651951
+    locked: 0
+  - name: Hi-Hat
+    uniqueID: 436335793
+    locked: 0
+  - name: Hi-Hat Pedal
+    uniqueID: 2696157969
+    locked: 0
+  - name: UI Gameplay
+    uniqueID: 370459685
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  m_MigratedRenderPipelines: []
