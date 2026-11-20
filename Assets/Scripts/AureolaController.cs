@@ -60,10 +60,20 @@ public class AureolaController : MonoBehaviour
 
     public void AtivarNota(double tempoAlvo, float duracaoAntecedencia, bool exigePedalSegurado = false, bool destacarComoHiHatAberto = false)
     {
+        
+        if (duracaoAntecedencia <= 0)
+        {
+            Debug.LogError("A duração de antecedência deve ser maior que zero!");
+            return;
+        }
+
         TempoAlvo = tempoAlvo;
         _duracaoAntecedencia = duracaoAntecedencia;
+
         _tempoSpawn = tempoAlvo - duracaoAntecedencia;
+
         ExigePedalSegurado = exigePedalSegurado;
+
         EscalaRelativaAtual = multiplicadorEscalaInicial;
 
         _corBaseAtual = destacarComoHiHatAberto ? corAureolaHiHatAberto : corAureolaPadrao;

@@ -62,24 +62,46 @@ public class MusicaController : MonoBehaviour
     }
 
     // VINCULE ESTE MÉTODO NO "ON CLICK()" DO SEU BOTÃO JOGAR (COM MÚSICA)!
-    public void IniciarJogoPeloMenu()
+     public void IniciarJogoPeloMenu()
     {
         if (_jogoIniciado) return;
 
         if (painelMenuInicial != null)
             painelMenuInicial.SetActive(false);
 
-        if (mapaAtual == null) return;
+        if (mapaAtual == null)
+        {
+            Debug.LogError("Nenhum mapa de música foi configurado!");
+            return;
+        }
+
+        if (mapaAtual.bpm <= 0)
+        {
+            Debug.LogError("O BPM precisa ser maior que zero!");
+            return;
+        }
+
+        if (mapaAtual.arquivoAudio == null)
+        {
+            Debug.LogError("O mapa não possui uma música configurada!");
+            return;
+        }
+
+        if (mapaAtual.tempoAntecedenciaAureola <= 0)
+        {
+            Debug.LogError("O tempo de antecedência precisa ser maior que zero!");
+            return;
+        }
+
+        mapaAtual.OrdenarNotas();
 
         _segundosPorBatida = 60.0 / mapaAtual.bpm;
         _indiceProximaNota = 0;
         _dspTimeInicioMusica = AudioSettings.dspTime + atrasoInicialSegundos;
 
-        if (mapaAtual.arquivoAudio != null)
-        {
-            _audioSource.clip = mapaAtual.arquivoAudio;
-            _audioSource.PlayScheduled(_dspTimeInicioMusica);
-        }
+        _audioSource.clip = mapaAtual.arquivoAudio;
+        _audioSource.PlayScheduled(_dspTimeInicioMusica);
+        
 
         _jogoIniciado = true;
     }
