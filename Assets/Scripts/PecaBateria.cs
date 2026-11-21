@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,11 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(AudioSource))]
 public class PecaBateria : MonoBehaviour
 {
+    [Header("Precisão em segundos")]
+    [SerializeField] private float folgaTempoPerfeito = 0.05f;
+    [SerializeField] private float folgaTempoBom = 0.10f;
+    [SerializeField] private float folgaTempoRuim = 0.15f;
+
     [Header("Input Principal")]
     [SerializeField] private InputActionReference acaoToque;
 
@@ -190,47 +196,45 @@ public class PecaBateria : MonoBehaviour
 
     private Color AvaliarPrecisaoToque(bool pedalEstavaSegurado)
     {
-        if (_filaAureolasAtivas.Count == 0 || MusicaController.Instancia == null)
+        if (_filaAureolasAtivas.Count == 0 ||
+            MusicaController.Instancia == null)
+        {
             return corToqueLivre;
+        }
 
-        AureolaController notaMaisAntiga = _filaAureolasAtivas.Peek();
-        float distanciaDoAlinhamento = Mathf.Abs(notaMaisAntiga.EscalaRelativaAtual - 1.0f);
+        AureolaController notaMaisAntiga =
+            _filaAureolasAtivas.Peek();
 
-        if (distanciaDoAlinhamento > folgaEscalaRuim)
+        double diferenca = Math.Abs(
+            MusicaController.Instancia.TempoMusicaAtual
+            - notaMaisAntiga.TempoAlvo
+        );
+
+        if (diferenca > folgaTempoRuim)
+        {
             return corToqueLivre;
+        }
 
         _filaAureolasAtivas.Dequeue();
+
         notaMaisAntiga.DesativarNota();
         _poolAureolasInativas.Enqueue(notaMaisAntiga);
 
         AtualizarAvisoVisualDoPedal();
 
-        // Se for o Hi-Hat, verifica se o jogador estava segurando (ou soltando) o pedal conforme o mapa pedia!
-        if (UsaModificadorDePedal && pedalEstavaSegurado != notaMaisAntiga.ExigePedalSegurado)
+        if (UsaModificadorDePedal &&
+            pedalEstavaSegurado != notaMaisAntiga.ExigePedalSegurado)
         {
-            if (mostrarLogsNoConsole)
-            {
-                string esperado = notaMaisAntiga.ExigePedalSegurado ? "FECHADO (Segurar Pedal)" : "ABERTO (Soltar Pedal)";
-                Debug.Log($"[{gameObject.name}] PEDAL INCORRETO! Esperava Hi-Hat {esperado}. Nota reduzida para RUIM.");
-            }
             return corRuim;
         }
 
-        if (distanciaDoAlinhamento <= folgaEscalaPerfeito)
-        {
-            if (mostrarLogsNoConsole) Debug.Log($"[{gameObject.name}] PERFEITO! (Escala: {notaMaisAntiga.EscalaRelativaAtual:F2})");
+        if (diferenca <= folgaTempoPerfeito)
             return corPerfeito;
-        }
-        else if (distanciaDoAlinhamento <= folgaEscalaBom)
-        {
-            if (mostrarLogsNoConsole) Debug.Log($"[{gameObject.name}] BOM! (Escala: {notaMaisAntiga.EscalaRelativaAtual:F2})");
+
+        if (diferenca <= folgaTempoBom)
             return corBom;
-        }
-        else
-        {
-            if (mostrarLogsNoConsole) Debug.Log($"[{gameObject.name}] RUIM! (Escala: {notaMaisAntiga.EscalaRelativaAtual:F2})");
-            return corRuim;
-        }
+
+        return corRuim;
     }
 
     private void OnPedalModificadorPerformed(InputAction.CallbackContext context)
@@ -247,7 +251,7 @@ public class PecaBateria : MonoBehaviour
     {
         if (som != null)
         {
-            _audioSource.pitch = Random.Range(pitchMin, pitchMax);
+            _audioSource.pitch = UnityEngine.Random.Range(pitchMin, pitchMax);
             _audioSource.PlayOneShot(som);
         }
     }
