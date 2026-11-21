@@ -220,7 +220,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""d4848fd9-a813-47c4-a4cd-d8e8a8e9255f"",
-                    ""path"": ""<Keyboard>/leftBracket"",
+                    ""path"": ""<Keyboard>/p"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -242,7 +242,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""aff6b378-ae52-4a39-9989-f7dcb103aa77"",
-                    ""path"": ""<Keyboard>/rightBracket"",
+                    ""path"": ""<Keyboard>/o"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -264,7 +264,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""2119cf55-a8f1-480c-8896-d685c0af944d"",
-                    ""path"": ""<Keyboard>/backslash"",
+                    ""path"": ""<Keyboard>/l"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -286,7 +286,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""071b4723-076f-4d2b-b229-bbedd0f7ef32"",
-                    ""path"": ""<Keyboard>/p"",
+                    ""path"": ""<Keyboard>/leftBracket"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -308,7 +308,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""2b953b5c-bbbd-41e3-b12e-a6fa50b15eb4"",
-                    ""path"": ""<Keyboard>/3"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -319,7 +319,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""30fc901b-ba03-4783-9ee7-75b645fcf41a"",
-                    ""path"": ""<Keyboard>/9"",
+                    ""path"": ""<Keyboard>/i"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -330,7 +330,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""10c77e23-32d7-401e-9429-a6a806d49c8d"",
-                    ""path"": ""<Keyboard>/4"",
+                    ""path"": ""<Keyboard>/t"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -341,7 +341,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""bd61a39f-24ea-48cd-b090-91ae8e193d75"",
-                    ""path"": ""<Keyboard>/0"",
+                    ""path"": ""<Keyboard>/rightBracket"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -363,7 +363,7 @@ public partial class @BateriaActionsScript: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""45977a08-554f-467b-bf44-7197bd986d22"",
-                    ""path"": ""<Keyboard>/l"",
+                    ""path"": ""<Keyboard>/semicolon"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
