@@ -34,65 +34,61 @@ MonoBehaviour:
     Compasso 14\r\n53.0|Kick, 54.0|Kick, 55.0|Kick, 56.0|Kick\r\n# Compasso 15\r\n57.0|Kick,
     58.0|Kick, 59.0|Kick, 60.0|Kick\r\n# Compasso 16 (Virada no tempo 4: Kick ->
     Snare -> HighTom)\r\n61.0|Kick, 62.0|Kick, 63.0|Kick, 64.0|FloorTom, 64.25|LowTom\r\n\r\n#
-    --- CHORUS 1 (Compassos 17 a 24) ---\r\n# Compasso 17\r\n65.0|Kick, 65.0|Snare,
-    65.5|FloorTom\r\n66.0|Kick, 66.0|Snare, 66.5|FloorTom\r\n67.0|Kick, 67.0|Snare,
-    67.5|FloorTom\r\n68.0|Kick, 68.0|Snare, 68.5|FloorTom\r\n\r\n# Compasso 18\r\n69.0|Kick,
-    69.0|Snare, 69.5|FloorTom\r\n70.0|Kick, 70.0|Snare, 70.5|FloorTom\r\n71.0|Kick,
-    71.0|Snare, 71.5|FloorTom\r\n72.0|Kick, 72.0|Snare, 72.5|FloorTom\r\n\r\n# Compasso
-    19\r\n73.0|Kick, 73.0|Snare, 73.0|Crash, 73.5|FloorTom\r\n74.0|Kick, 74.0|Snare,
-    74.5|FloorTom\r\n75.0|Kick, 75.0|Snare, 75.5|FloorTom\r\n76.0|Kick, 76.0|Snare,
-    76.5|FloorTom\r\n\r\n# Compasso 20\r\n77.0|Snare, 77.25|Snare, 77.5|Snare, 77.75|Snare\r\n78.0|Snare,
-    78.25|Snare, 78.5|Snare, 78.75|Snare\r\n79.0|Snare, 79.25|Snare, 79.5|Snare,
-    79.75|Snare\r\n80.0|Snare, 80.25|Snare, 80.5|Snare, 80.75|Snare\r\n\r\n# Compasso
-    21\r\n81.0|Kick, 81.0|Snare, 81.5|FloorTom\r\n82.0|Kick, 82.0|Snare, 82.5|FloorTom\r\n83.0|Kick,
-    83.0|Snare, 83.5|FloorTom\r\n84.0|Kick, 84.0|Snare, 84.5|FloorTom\r\n\r\n# Compasso
-    22\r\n85.0|Kick, 85.0|Snare, 85.5|FloorTom\r\n86.0|Kick, 86.0|Snare, 86.5|FloorTom\r\n87.0|Kick,
-    87.0|Snare, 87.5|FloorTom\r\n88.0|Kick, 88.0|Snare, 88.5|FloorTom\r\n\r\n# Compasso
-    23\r\n89.0|Kick, 89.0|Snare, 89.0|Crash, 89.5|FloorTom\r\n90.0|Kick, 90.0|Snare,
-    90.5|FloorTom\r\n91.0|Kick, 91.0|Snare, 91.5|FloorTom\r\n92.0|Kick, 92.0|Snare,
-    92.5|FloorTom\r\n\r\n# Compasso 24\r\n93.0|Snare, 93.25|Snare, 93.5|Snare, 93.75|Snare\r\n94.0|Snare,
-    94.25|Snare, 94.5|Snare, 94.75|Snare\r\n95.0|Snare, 95.25|Snare, 95.5|Snare,
-    95.75|Snare\r\n96.0|Snare, 96.25|Snare, 96.5|Snare, 96.75|Snare\r\n\r\n# ---
-    RE-INTRO & VERSE 2 (Compassos 25 a 40) ---\r\n# Compasso 25 (Pausa)\r\n# Compasso
-    26 (Pausa)\r\n\r\n# Compasso 27\r\n105.0|Kick, 106.0|Kick, 107.0|Kick, 107.5|Ride,
-    108.0|Kick\r\n# Compasso 28 (Abertura o e fechamento + de Hi-Hat no tempo 3)\r\n109.0|Kick,
-    110.0|Kick, 111.0|Kick, 111.0|HHO, 111.25|HHC\r\n# Compasso 29\r\n113.0|Kick,
-    114.0|Kick, 115.0|Kick, 116.0|Kick\r\n# Compasso 30\r\n117.0|Kick, 118.0|Kick,
-    119.0|Kick, 120.0|Kick\r\n# Compasso 31\r\n121.0|Kick, 122.0|Kick, 123.0|Kick,
-    124.0|Kick\r\n# Compasso 32 (Tercina no Hi-Hat no tempo 3.5 -> 4.0)\r\n125.0|Kick,
-    126.0|Kick, 127.0|Kick, 127.5|HHC, 127.67|HHC, 127.83|HHC, 128.0|HHC\r\n# Compasso
-    33\r\n129.0|Kick, 130.0|Kick, 131.0|Kick, 132.0|Kick\r\n# Compasso 34\r\n133.0|Kick,
-    134.0|Kick, 135.0|Kick, 136.0|Kick\r\n# Compasso 35\r\n137.0|Kick, 138.0|Kick,
-    139.0|Kick, 140.0|Kick\r\n# Compasso 36\r\n141.0|Kick, 142.0|Kick, 143.0|Kick,
-    144.0|Kick\r\n# Compasso 37\r\n145.0|Kick, 146.0|Kick, 147.0|Kick, 148.0|Kick\r\n#
-    Compasso 38\r\n149.0|Kick, 150.0|Kick, 151.0|Kick, 152.0|Kick\r\n# Compasso 39\r\n153.0|Kick,
-    154.0|Kick, 155.0|Kick, 156.0|Kick\r\n# Compasso 40 (Virada no tempo 4)\r\n157.0|Kick,
-    158.0|Kick, 159.0|Kick, 160.0|Kick, 160.25|Snare, 160.5|Snare\r\n\r\n# --- CHORUS
-    2 (Compassos 41 a 52) ---\r\n# Compasso 41\r\n161.0|Kick, 161.0|Snare, 161.0|FloorTom,
-    161.5|Kick\r\n162.0|Kick, 162.0|Snare, 162.0|FloorTom, 162.5|Kick\r\n163.0|Kick,
-    163.0|Snare, 163.0|FloorTom, 163.5|Kick\r\n164.0|Kick, 164.0|Snare, 164.0|FloorTom,
-    164.5|Kick\r\n\r\n# Compasso 42\r\n165.0|Kick, 165.0|Snare, 165.0|FloorTom, 165.5|Kick\r\n166.0|Kick,
-    166.0|Snare, 166.0|FloorTom, 166.5|Kick\r\n167.0|Kick, 167.0|Snare, 167.0|FloorTom,
-    167.5|Kick\r\n168.0|Kick, 168.0|Snare, 168.0|FloorTom, 168.5|Kick\r\n\r\n# Compasso
-    43\r\n169.0|Kick, 169.0|Crash, 169.0|Snare, 169.5|Kick\r\n170.0|Kick, 170.0|Snare,
-    170.0|FloorTom, 170.5|Kick\r\n171.0|Kick, 171.0|Snare, 171.0|FloorTom, 171.5|Kick\r\n172.0|Kick,
-    172.0|Snare, 172.0|FloorTom, 172.5|Kick\r\n\r\n# Compasso 44\r\n173.0|Kick, 173.0|Crash,
-    173.0|Snare, 173.5|Kick\r\n174.0|Kick, 174.0|Snare, 174.0|FloorTom, 174.5|Kick,
-    174.75|Snare\r\n175.0|Kick, 175.0|Snare, 175.25|Snare, 175.5|Snare, 175.75|Snare\r\n176.0|Kick,
-    176.0|Snare, 176.25|Snare, 176.5|Snare, 176.75|Snare\r\n\r\n# Compasso 45\r\n177.0|Kick,
-    177.0|Crash, 177.0|Snare, 177.0|FloorTom, 177.5|Kick\r\n178.0|Kick, 178.0|Snare,
-    178.0|FloorTom, 178.5|Kick\r\n179.0|Kick, 179.0|Snare, 179.0|FloorTom, 179.5|Kick\r\n180.0|Kick,
-    180.0|Snare, 180.0|FloorTom, 180.5|Kick\r\n\r\n# Compasso 46\r\n181.0|Kick, 181.0|Snare,
-    181.0|FloorTom, 181.5|Kick\r\n182.0|Kick, 182.0|Snare, 182.0|FloorTom, 182.5|Kick\r\n183.0|Kick,
-    183.0|Snare, 183.0|FloorTom, 183.5|Kick\r\n184.0|Kick, 184.0|Snare, 184.0|FloorTom,
-    184.5|Kick\r\n\r\n# Compasso 47\r\n185.0|Kick, 185.0|Crash, 185.0|Snare, 185.0|FloorTom,
-    185.5|Kick\r\n186.0|Kick, 186.0|Snare, 186.0|FloorTom, 186.5|Kick\r\n187.0|Kick,
-    187.0|Snare, 187.0|FloorTom, 187.5|Kick\r\n188.0|Kick, 188.0|Snare, 188.0|FloorTom,
-    188.5|Kick\r\n\r\n# Compasso 48\r\n189.0|Kick, 189.0|Snare, 189.0|FloorTom, 189.5|Kick\r\n190.0|Kick,
-    190.0|Snare, 190.0|FloorTom, 190.5|Kick, 190.75|Snare\r\n191.0|Kick, 191.0|Snare,
-    191.25|Snare, 191.5|Snare, 191.75|Snare\r\n192.0|Kick, 192.0|Snare, 192.25|Snare,
-    192.5|Snare, 192.75|Snare\r\n\r\n# Compasso 49\r\n193.0|Kick, 193.0|Crash, 193.0|Snare,
-    193.0|FloorTom, 193.5|Kick\r\n194.0|Kick, 194.0|Snare, 194.0|FloorTom, 194.5|Kick\r\n195.0|Kick,
+    --- CHORUS 1 (Compassos 17 a 24) ---\r\n# Compasso 17\r\n65.0|Snare, 65.5|FloorTom,
+    66.0|Snare, 66.5|FloorTom\r\n67.0|Snare, 67.5|FloorTom, 68.0|Snare, 68.5|FloorTom\r\n\r\n#
+    Compasso 18\r\n69.0|Snare, 69.5|FloorTom, 70.0|Snare, 70.5|FloorTom\r\n71.0|Snare,
+    71.5|FloorTom, 72.0|Snare, 72.5|FloorTom\r\n\r\n# Compasso 19\r\n73.0|Crash,
+    73.5|FloorTom, 74.0|Snare, 74.5|FloorTom\r\n75.0|Snare, 75.5|FloorTom, 76.0|Snare,
+    76.5|FloorTom\r\n\r\n# Compasso 20\r\n77.0|Snare, 77.5|FloorTom, 78.0|Snare,
+    78.5|FloorTom\r\n79.0|Snare, 79.25|Snare, 79.5|Snare, 79.75|Snare\r\n80.0|Snare,
+    80.25|Snare, 80.5|Snare, 80.75|Snare\r\n\r\n# Compasso 21\r\n81.0|Snare, 81.5|FloorTom,
+    82.0|Snare, 82.5|FloorTom\r\n83.0|Snare, 83.5|FloorTom, 84.0|Snare, 84.5|FloorTom\r\n\r\n#
+    Compasso 22\r\n85.0|Snare, 85.5|FloorTom, 86.0|Snare, 86.5|FloorTom\r\n87.0|Snare,
+    87.5|FloorTom, 88.0|Snare, 88.5|FloorTom\r\n\r\n# Compasso 23\r\n89.0|Crash,
+    89.5|FloorTom, 90.0|Snare, 90.5|FloorTom\r\n91.0|Snare, 91.5|FloorTom, 92.0|Snare,
+    92.5|FloorTom\r\n\r\n# Compasso 24\r\n93.0|Snare, 93.5|FloorTom, 94.0|Snare,
+    94.5|FloorTom\r\n95.0|Snare, 95.25|Snare, 95.5|Snare, 95.75|Snare\r\n96.0|Snare,
+    96.25|Snare, 96.5|Snare, 96.75|Snare\r\n\r\n# --- RE-INTRO & VERSE 2 (Compassos
+    25 a 40) ---\r\n# Compasso 25 (Pausa)\r\n# Compasso 26 (Pausa)\r\n\r\n# Compasso
+    27\r\n105.0|Kick, 106.0|Kick, 107.0|Kick, 107.5|Ride, 108.0|Kick\r\n# Compasso
+    28 (Abertura o e fechamento + de Hi-Hat no tempo 3)\r\n109.0|Kick, 110.0|Kick,
+    111.0|Kick, 111.0|HHO, 111.25|HHC\r\n# Compasso 29\r\n113.0|Kick, 114.0|Kick,
+    115.0|Kick, 116.0|Kick\r\n# Compasso 30\r\n117.0|Kick, 118.0|Kick, 119.0|Kick,
+    120.0|Kick\r\n# Compasso 31\r\n121.0|Kick, 122.0|Kick, 123.0|Kick, 124.0|Kick\r\n#
+    Compasso 32 (Tercina no Hi-Hat no tempo 3.5 -> 4.0)\r\n125.0|Kick, 126.0|Kick,
+    127.0|Kick, 127.5|HHC, 127.67|HHC, 127.83|HHC, 128.0|HHC\r\n# Compasso 33\r\n129.0|Kick,
+    130.0|Kick, 131.0|Kick, 132.0|Kick\r\n# Compasso 34\r\n133.0|Kick, 134.0|Kick,
+    135.0|Kick, 136.0|Kick\r\n# Compasso 35\r\n137.0|Kick, 138.0|Kick, 139.0|Kick,
+    140.0|Kick\r\n# Compasso 36\r\n141.0|Kick, 142.0|Kick, 143.0|Kick, 144.0|Kick\r\n#
+    Compasso 37\r\n145.0|Kick, 146.0|Kick, 147.0|Kick, 148.0|Kick\r\n# Compasso 38\r\n149.0|Kick,
+    150.0|Kick, 151.0|Kick, 152.0|Kick\r\n# Compasso 39\r\n153.0|Kick, 154.0|Kick,
+    155.0|Kick, 156.0|Kick\r\n# Compasso 40 (Virada no tempo 4)\r\n157.0|Kick, 158.0|Kick,
+    159.0|Kick, 160.0|Kick, 160.25|Snare, 160.5|Snare\r\n\r\n# --- CHORUS 2 (Compassos
+    41 a 52) ---\r\n# Compasso 41\r\n161.0|Kick, 161.0|Snare, 161.0|FloorTom, 161.5|Kick\r\n162.0|Kick,
+    162.0|Snare, 162.0|FloorTom, 162.5|Kick\r\n163.0|Kick, 163.0|Snare, 163.0|FloorTom,
+    163.5|Kick\r\n164.0|Kick, 164.0|Snare, 164.0|FloorTom, 164.5|Kick\r\n\r\n# Compasso
+    42\r\n165.0|Kick, 165.0|Snare, 165.0|FloorTom, 165.5|Kick\r\n166.0|Kick, 166.0|Snare,
+    166.0|FloorTom, 166.5|Kick\r\n167.0|Kick, 167.0|Snare, 167.0|FloorTom, 167.5|Kick\r\n168.0|Kick,
+    168.0|Snare, 168.0|FloorTom, 168.5|Kick\r\n\r\n# Compasso 43\r\n169.0|Kick, 169.0|Crash,
+    169.0|Snare, 169.5|Kick\r\n170.0|Kick, 170.0|Snare, 170.0|FloorTom, 170.5|Kick\r\n171.0|Kick,
+    171.0|Snare, 171.0|FloorTom, 171.5|Kick\r\n172.0|Kick, 172.0|Snare, 172.0|FloorTom,
+    172.5|Kick\r\n\r\n# Compasso 44\r\n173.0|Kick, 173.0|Crash, 173.0|Snare, 173.5|Kick\r\n174.0|Kick,
+    174.0|Snare, 174.0|FloorTom, 174.5|Kick, 174.75|Snare\r\n175.0|Kick, 175.0|Snare,
+    175.25|Snare, 175.5|Snare, 175.75|Snare\r\n176.0|Kick, 176.0|Snare, 176.25|Snare,
+    176.5|Snare, 176.75|Snare\r\n\r\n# Compasso 45\r\n177.0|Kick, 177.0|Crash, 177.0|Snare,
+    177.0|FloorTom, 177.5|Kick\r\n178.0|Kick, 178.0|Snare, 178.0|FloorTom, 178.5|Kick\r\n179.0|Kick,
+    179.0|Snare, 179.0|FloorTom, 179.5|Kick\r\n180.0|Kick, 180.0|Snare, 180.0|FloorTom,
+    180.5|Kick\r\n\r\n# Compasso 46\r\n181.0|Kick, 181.0|Snare, 181.0|FloorTom, 181.5|Kick\r\n182.0|Kick,
+    182.0|Snare, 182.0|FloorTom, 182.5|Kick\r\n183.0|Kick, 183.0|Snare, 183.0|FloorTom,
+    183.5|Kick\r\n184.0|Kick, 184.0|Snare, 184.0|FloorTom, 184.5|Kick\r\n\r\n# Compasso
+    47\r\n185.0|Kick, 185.0|Crash, 185.0|Snare, 185.0|FloorTom, 185.5|Kick\r\n186.0|Kick,
+    186.0|Snare, 186.0|FloorTom, 186.5|Kick\r\n187.0|Kick, 187.0|Snare, 187.0|FloorTom,
+    187.5|Kick\r\n188.0|Kick, 188.0|Snare, 188.0|FloorTom, 188.5|Kick\r\n\r\n# Compasso
+    48\r\n189.0|Kick, 189.0|Snare, 189.0|FloorTom, 189.5|Kick\r\n190.0|Kick, 190.0|Snare,
+    190.0|FloorTom, 190.5|Kick, 190.75|Snare\r\n191.0|Kick, 191.0|Snare, 191.25|Snare,
+    191.5|Snare, 191.75|Snare\r\n192.0|Kick, 192.0|Snare, 192.25|Snare, 192.5|Snare,
+    192.75|Snare\r\n\r\n# Compasso 49\r\n193.0|Kick, 193.0|Crash, 193.0|Snare, 193.0|FloorTom,
+    193.5|Kick\r\n194.0|Kick, 194.0|Snare, 194.0|FloorTom, 194.5|Kick\r\n195.0|Kick,
     195.0|Snare, 195.0|FloorTom, 195.5|Kick\r\n196.0|Kick, 196.0|Snare, 196.0|FloorTom,
     196.5|Kick\r\n\r\n# Compasso 50\r\n197.0|Kick, 197.0|Crash, 197.0|Snare, 197.0|FloorTom,
     197.5|Kick\r\n198.0|Kick, 198.0|Snare, 198.0|FloorTom, 198.5|Kick\r\n199.0|Kick,

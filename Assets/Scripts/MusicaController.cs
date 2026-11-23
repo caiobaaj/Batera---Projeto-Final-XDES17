@@ -34,6 +34,9 @@ public class MusicaController : MonoBehaviour
 
     public double TempoMusicaAtual => _jogoIniciado ? (AudioSettings.dspTime - _dspTimeInicioMusica) : -999.0;
 
+    // Usado pelas auréolas e peças: usa o tempo da música se ela estiver rolando, ou DSP direto na Apresentação!
+    public double TempoReferenciaAtual => _jogoIniciado ? (AudioSettings.dspTime - _dspTimeInicioMusica) : AudioSettings.dspTime;
+
     private void Awake()
     {
         if (Instancia != null && Instancia != this)
@@ -50,7 +53,12 @@ public class MusicaController : MonoBehaviour
 
     private void Start()
     {
-        // Se você não arrastar nenhum painel de menu, ele começa direto para não quebrar seus testes
+        // Se houver um ApresentacaoController ativo na cena, deixa ele controlar quando o menu final aparece
+        if (FindFirstObjectByType<ApresentacaoController>() != null)
+        {
+            return;
+        }
+
         if (painelMenuInicial == null)
         {
             IniciarJogoPeloMenu();
@@ -62,7 +70,7 @@ public class MusicaController : MonoBehaviour
     }
 
     // VINCULE ESTE MÉTODO NO "ON CLICK()" DO SEU BOTÃO JOGAR (COM MÚSICA)!
-     public void IniciarJogoPeloMenu()
+    public void IniciarJogoPeloMenu()
     {
         if (_jogoIniciado) return;
 
@@ -93,6 +101,7 @@ public class MusicaController : MonoBehaviour
             return;
         }
 
+        LimparTodasAsAureolas();
         mapaAtual.OrdenarNotas();
 
         _segundosPorBatida = 60.0 / mapaAtual.bpm;
@@ -101,7 +110,6 @@ public class MusicaController : MonoBehaviour
 
         _audioSource.clip = mapaAtual.arquivoAudio;
         _audioSource.PlayScheduled(_dspTimeInicioMusica);
-        
 
         _jogoIniciado = true;
     }
@@ -112,7 +120,21 @@ public class MusicaController : MonoBehaviour
         if (painelMenuInicial != null)
             painelMenuInicial.SetActive(false);
 
+        LimparTodasAsAureolas();
         _jogoIniciado = false;
+    }
+
+    public void LimparTodasAsAureolas()
+    {
+        if (pecaKick != null) pecaKick.LimparAureolasAtivas();
+        if (pecaSnare != null) pecaSnare.LimparAureolasAtivas();
+        if (pecaHighTom != null) pecaHighTom.LimparAureolasAtivas();
+        if (pecaLowTom != null) pecaLowTom.LimparAureolasAtivas();
+        if (pecaFloorTom != null) pecaFloorTom.LimparAureolasAtivas();
+        if (pecaHiHat != null) pecaHiHat.LimparAureolasAtivas();
+        if (pecaHiHatPedal != null) pecaHiHatPedal.LimparAureolasAtivas();
+        if (pecaCrash != null) pecaCrash.LimparAureolasAtivas();
+        if (pecaRide != null) pecaRide.LimparAureolasAtivas();
     }
 
     public void ReiniciarJogo()

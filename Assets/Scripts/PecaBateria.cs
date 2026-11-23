@@ -27,13 +27,10 @@ public class PecaBateria : MonoBehaviour
     [SerializeField] private Color corRuim = Color.yellow;
     [SerializeField] private Color corMiss = Color.red;
 
-    [Header("Sistema de Auréola e Folga Visual (1.0 = Alinhamento Exato)")]
+    [Header("Sistema de Auréola")]
     [SerializeField] private AureolaController prefabAureola;
     [SerializeField] private Sprite spriteAureolaEspecifico;
     [SerializeField] private int tamanhoPoolAureolas = 8;
-    [SerializeField] private float folgaEscalaPerfeito = 0.18f;
-    [SerializeField] private float folgaEscalaBom = 0.32f;
-    [SerializeField] private float folgaEscalaRuim = 0.45f;
     [SerializeField] private bool mostrarLogsNoConsole = true;
 
     [Header("Áudio Principal")]
@@ -141,7 +138,6 @@ public class PecaBateria : MonoBehaviour
             novaAureola.ConfigurarPool(this, spritePlay, spriteAureolaEspecifico);
         }
 
-        // Se esta peça for o Hi-Hat e a nota NÃO exigir pedal segurado, destaca a auréola como Hi-Hat Aberto!
         bool destacarHiHatAberto = UsaModificadorDePedal && !exigePedalSegurado;
 
         novaAureola.AtivarNota(tempoAlvoDSP, tempoAntecedencia, exigePedalSegurado, destacarHiHatAberto);
@@ -168,11 +164,32 @@ public class PecaBateria : MonoBehaviour
         PiscarCor(corMiss);
     }
 
+    public void LimparAureolasAtivas()
+    {
+        while (_filaAureolasAtivas.Count > 0)
+        {
+            AureolaController aureola = _filaAureolasAtivas.Dequeue();
+            aureola.DesativarNota();
+            _poolAureolasInativas.Enqueue(aureola);
+        }
+
+        if (objetoAvisoSegurarPedal != null)
+            objetoAvisoSegurarPedal.SetActive(false);
+
+        if (_rotinaPiscar != null)
+        {
+            StopCoroutine(_rotinaPiscar);
+            _rotinaPiscar = null;
+        }
+
+        if (spritePlay != null)
+            spritePlay.color = _corOriginal;
+    }
+
     private void AtualizarAvisoVisualDoPedal()
     {
         if (objetoAvisoSegurarPedal == null) return;
 
-        // O objeto sólido do pedal fica aceso enquanto a próxima nota da fila do Hi-Hat exigir o pedal segurado!
         bool deveSegurarPedalAgora = _filaAureolasAtivas.Count > 0 && _filaAureolasAtivas.Peek().ExigePedalSegurado;
         objetoAvisoSegurarPedal.SetActive(deveSegurarPedalAgora);
     }
@@ -196,19 +213,18 @@ public class PecaBateria : MonoBehaviour
 
     private Color AvaliarPrecisaoToque(bool pedalEstavaSegurado)
     {
-        if (_filaAureolasAtivas.Count == 0 ||
-            MusicaController.Instancia == null)
+        if (_filaAureolasAtivas.Count == 0)
         {
             return corToqueLivre;
         }
 
-        AureolaController notaMaisAntiga =
-            _filaAureolasAtivas.Peek();
+        AureolaController notaMaisAntiga = _filaAureolasAtivas.Peek();
 
-        double diferenca = Math.Abs(
-            MusicaController.Instancia.TempoMusicaAtual
-            - notaMaisAntiga.TempoAlvo
-        );
+        double tempoAtual = MusicaController.Instancia != null
+            ? MusicaController.Instancia.TempoReferenciaAtual
+            : AudioSettings.dspTime;
+
+        double diferenca = Math.Abs(tempoAtual - notaMaisAntiga.TempoAlvo);
 
         if (diferenca > folgaTempoRuim)
         {
@@ -216,24 +232,30 @@ public class PecaBateria : MonoBehaviour
         }
 
         _filaAureolasAtivas.Dequeue();
-
         notaMaisAntiga.DesativarNota();
         _poolAureolasInativas.Enqueue(notaMaisAntiga);
 
         AtualizarAvisoVisualDoPedal();
 
-        if (UsaModificadorDePedal &&
-            pedalEstavaSegurado != notaMaisAntiga.ExigePedalSegurado)
+        if (UsaModificadorDePedal && pedalEstavaSegurado != notaMaisAntiga.ExigePedalSegurado)
         {
+            if (mostrarLogsNoConsole) Debug.Log($"[{gameObject.name}] PEDAL INCORRETO -> RUIM");
             return corRuim;
         }
 
         if (diferenca <= folgaTempoPerfeito)
+        {
+            if (mostrarLogsNoConsole) Debug.Log($"[{gameObject.name}] PERFEITO! ({diferenca * 1000.0:F0}ms)");
             return corPerfeito;
+        }
 
         if (diferenca <= folgaTempoBom)
+        {
+            if (mostrarLogsNoConsole) Debug.Log($"[{gameObject.name}] BOM! ({diferenca * 1000.0:F0}ms)");
             return corBom;
+        }
 
+        if (mostrarLogsNoConsole) Debug.Log($"[{gameObject.name}] RUIM! ({diferenca * 1000.0:F0}ms)");
         return corRuim;
     }
 

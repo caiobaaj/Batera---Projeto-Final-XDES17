@@ -60,7 +60,6 @@ public class AureolaController : MonoBehaviour
 
     public void AtivarNota(double tempoAlvo, float duracaoAntecedencia, bool exigePedalSegurado = false, bool destacarComoHiHatAberto = false)
     {
-        
         if (duracaoAntecedencia <= 0)
         {
             Debug.LogError("A duração de antecedência deve ser maior que zero!");
@@ -69,11 +68,8 @@ public class AureolaController : MonoBehaviour
 
         TempoAlvo = tempoAlvo;
         _duracaoAntecedencia = duracaoAntecedencia;
-
         _tempoSpawn = tempoAlvo - duracaoAntecedencia;
-
         ExigePedalSegurado = exigePedalSegurado;
-
         EscalaRelativaAtual = multiplicadorEscalaInicial;
 
         _corBaseAtual = destacarComoHiHatAberto ? corAureolaHiHatAberto : corAureolaPadrao;
@@ -94,9 +90,13 @@ public class AureolaController : MonoBehaviour
 
     private void Update()
     {
-        if (!_ativa || MusicaController.Instancia == null) return;
+        if (!_ativa) return;
 
-        double tempoAtual = MusicaController.Instancia.TempoMusicaAtual;
+        // Usa o tempo da música se ela estiver tocando, ou o relógio DSP direto se estiver na apresentação!
+        double tempoAtual = MusicaController.Instancia != null 
+            ? MusicaController.Instancia.TempoReferenciaAtual 
+            : AudioSettings.dspTime;
+
         float progresso = (float)((tempoAtual - _tempoSpawn) / _duracaoAntecedencia);
 
         EscalaRelativaAtual = Mathf.LerpUnclamped(multiplicadorEscalaInicial, multiplicadorEscalaAlvo, progresso);
